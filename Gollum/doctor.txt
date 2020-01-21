@@ -1,5 +1,5 @@
 initial: What isss it, precious? #Added by Aaron
-final: Goodbye.  Thank you for talking to me.
+final: Goodbye, preciousss. #Added by Ben
 quit: bye
 quit: goodbye
 quit: quit
@@ -19,6 +19,10 @@ pre: were was
 pre: you're you are
 pre: i'm i am
 pre: same alike
+
+#Added by Ben
+pre: ring precious
+
 post: am are
 post: your my
 post: me you
@@ -36,9 +40,17 @@ synon: happy elated glad better
 synon: cannot can't
 synon: everyone everybody nobody noone
 synon: be am is are was
-key: pockets
-  decomp: *
+
+#added by Aaron
+key: pockets 2
+  decomp: *             
     reasmb: What has it got in its pocketses?
+
+#added by Ben
+key: who
+  decomp: *
+    reasmb: goto name
+
 key: xnone
   decomp: *
     reasmb: I'm not sure I understand you fully.
@@ -93,6 +105,15 @@ key: perhaps
     reasmb: You aren't sure ?
     reasmb: Don't you know ?
 key: name 15
+
+  #added by Ben
+  decomp: * you *
+    reasmb: We is Gollum
+    reasmb: We is Smeagol
+  decomp: * your *
+    reasmb: We is Gollum
+    reasmb: We is Smeagol
+  
   decomp: *
     reasmb: I am not interested in names.
     reasmb: I've told you before, I don't care about names -- please continue.

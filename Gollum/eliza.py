@@ -1,4 +1,5 @@
 import logging
+import sys #added by Ben
 import random
 import re
 from collections import namedtuple
@@ -8,6 +9,7 @@ try: input = raw_input
 except NameError: pass
 
 log = logging.getLogger(__name__)
+log.setLevel(logging.DEBUG) #added  by Ben
 
 
 class Key:
@@ -43,7 +45,12 @@ class Eliza:
             for line in file:
                 if not line.strip():
                     continue
+                try:                    #Added by Ben
+                    line.index(':')     #(ignore lines with no colon)
+                except ValueError:      #
+                    continue            #
                 tag, content = [part.strip() for part in line.split(':')]
+                content = content.split('#')[0] #Added by Ben (ignore comments at the end)
                 if tag == 'initial':
                     self.initials.append(content)
                 elif tag == 'final':
@@ -175,6 +182,11 @@ class Eliza:
         text = re.sub(r'\s*\.+\s*', ' . ', text)
         text = re.sub(r'\s*,+\s*', ' , ', text)
         text = re.sub(r'\s*;+\s*', ' ; ', text)
+
+        #Added by Ben
+        text = text.replace('?', ' ? ')
+        text = text.replace('!', ' ! ')
+
         log.debug('After punctuation cleanup: %s', text)
 
         words = [w for w in text.split(' ') if w]
