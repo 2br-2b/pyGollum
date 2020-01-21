@@ -1,4 +1,4 @@
-initial: What isss it, precious? #Added by Aaron
+initial: What is its problemses, precious? #Added by Aaron B.
 final: Goodbye.  Thank you for talking to me.
 quit: bye
 quit: goodbye
@@ -16,18 +16,18 @@ pre: certainly yes
 pre: machine computer
 pre: computers computer
 pre: were was
-pre: you're you are
-pre: i'm i am
+pre: you're it is #AB
+pre: i'm we is #AB
 pre: same alike
-post: am are
-post: your my
-post: me you
-post: myself yourself
-post: yourself myself
-post: i you
-post: you I
-post: my your
-post: i'm you are
+post: am is #AB
+post: your our #AB
+post: me it #AB
+post: myself itself #AB
+post: yourself ourselves #AB
+post: i it #AB
+post: you us #AB
+post: my its #AB
+post: i'm it is #AB
 synon: belief feel think believe wish
 synon: family mother mom father dad sister brother wife children child
 synon: desire want need
@@ -36,18 +36,19 @@ synon: happy elated glad better
 synon: cannot can't
 synon: everyone everybody nobody noone
 synon: be am is are was
-key: pockets
-  decomp: *
-    reasmb: What has it got in its pocketses?
-key: xnone
-  decomp: *
-    reasmb: I'm not sure I understand you fully.
-    reasmb: Please go on.
-    reasmb: What does that suggest to you ?
-    reasmb: Do you feel strongly about discussing such things ?
-key: sorry
-  decomp: *
-    reasmb: Please don't apologise.
+key: xnone                                                                              #AB
+  decomp: *                                                                             #
+    reasmb: We doesn't likes it, preciousss.                                            #
+    reasmb: What does it mean ?                                                         #
+    reasmb: We doesn't understand, precious, no, we doesn't.                            #
+    reasmb: Is it bits of string, precious, or nothing?                                 #
+key: pocket                                                                             #
+  decomp: *                                                                             #
+    reasmb: What has it got in its pocketses?                                           #
+    reasmb: Not fair! Not fair! It must give us three guesses, yes it musst.            #
+key: sorry                                                                              #
+  decomp: *                                                                             #
+    reasmb: We hates it forever!                                                        #
     reasmb: Apologies are not necessary.
     reasmb: I've told you that apologies are not required.
 key: apologise
@@ -117,8 +118,8 @@ key: xforeign
     reasmb: I speak only English.
 key: hello
   decomp: *
-    reasmb: How do you do.  Please state your problem.
-    reasmb: Hi.  What seems to be your problem ?
+    reasmb: It must state its problem, yes it musst.
+    reasmb: We doesn't like you, nasty, fat hobbit.
 key: computer 50
   decomp: *
     reasmb: Do computers worry you ?
@@ -360,4 +361,3 @@ key: alike 10
 key: like 10
   decomp: * @be * like *
     reasmb: goto alike
-   
