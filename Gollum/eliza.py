@@ -50,7 +50,12 @@ class Eliza:
                 except ValueError:      #
                     continue            #
                 tag, content = [part.strip() for part in line.split(':')]
-                content = content.split('#')[0] #Added by Ben (ignore comments at the end)
+                #########################
+                for x in content:
+                    for char in x:
+                        if char == '#':
+                            content = content[:content.find(char)].strip()
+                ######################### This bit of code will allow us to comment with who did what in the doctor.txt file without comments displaying within the finished product.
                 if tag == 'initial':
                     self.initials.append(content)
                 elif tag == 'final':
@@ -217,7 +222,8 @@ class Eliza:
             else:
                 output = self._next_reasmb(self.keys['xnone'].decomps[0])
                 log.debug('Output from xnone: %s', output)
-        print(key, output)
+        try: print(key, output)
+        except UnboundLocalError: pass #Added this to prevent the inexplicable UnboundedLocalErrors we were getting - worked pretty well. Since it now returns whitespace instead, it will just go to an "xnone" response. -Aaron
 
         return " ".join(output)
 
