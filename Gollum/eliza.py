@@ -1,5 +1,4 @@
 import logging
-import sys #added by Ben
 import random
 import re
 from collections import namedtuple
@@ -9,7 +8,7 @@ try: input = raw_input
 except NameError: pass
 
 log = logging.getLogger(__name__)
-log.setLevel(logging.DEBUG) #added  by Ben
+#log.setLevel(logging.DEBUG) #added  by Ben
 
 
 class Key:
@@ -198,12 +197,12 @@ class Eliza:
         log.debug('Input: %s', words)
 
         words = self._sub(words, self.pres)
-        print(words)
+        #print(words)
         log.debug('After pre-substitution: %s', words)
 
         keys = [self.keys[w.lower()] for w in words if w.lower() in self.keys]
         keys = sorted(keys, key=lambda k: -k.weight)
-        print(keys )
+        #print(keys )
         log.debug('Sorted keys: %s', [(k.word, k.weight) for k in keys])
 
         output = None
@@ -213,7 +212,7 @@ class Eliza:
             if output:
                 log.debug('Output from key: %s', output)
                 break
-            print(key)
+            #print(key)
         if not output:
             if self.memory:
                 index = random.randrange(len(self.memory))
@@ -222,8 +221,8 @@ class Eliza:
             else:
                 output = self._next_reasmb(self.keys['xnone'].decomps[0])
                 log.debug('Output from xnone: %s', output)
-        try: print(key, output)
-        except UnboundLocalError: pass #Added this to prevent the inexplicable UnboundedLocalErrors we were getting - worked pretty well. Since it now returns whitespace instead, it will just go to an "xnone" response. -Aaron
+        #try: print(key, output)
+        #except UnboundLocalError: pass #Added this to prevent the inexplicable UnboundedLocalErrors we were getting - worked pretty well. Since it now returns whitespace instead, it will just go to an "xnone" response. -Aaron
 
         return " ".join(output)
 

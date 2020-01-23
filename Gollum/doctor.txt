@@ -1,10 +1,5 @@
-<<<<<<< HEAD
-initial: What isss it, precious? #Added by Aaron
-final: Goodbye, preciousss. #Added by Ben
-=======
 initial: What is its problemses, precious? #Added by Aaron B.
-final: Goodbye.  Thank you for talking to me.
->>>>>>> 4e17f0b06dcba21a04897020762fd5a7bb9c27e4
+final: Goodbye, preciousss. #Added by Ben C.
 quit: bye
 quit: goodbye
 quit: quit
@@ -42,6 +37,29 @@ synon: happy elated glad better
 synon: cannot can't
 synon: everyone everybody nobody noone
 synon: be am is are was
+
+#riddles added by Ben Campbell
+key: riddle
+  decomp: *
+    reasmb: Here is a riddle. What has roots as nobody sees, is taller than trees, up, up it goes, and yet never grows?
+    reasmb: Here is a riddle. Voiceless it cries, wingless flutters, toothless bites, mouthless mutters.
+    reasmb: Here is a riddle. It cannot be seen, cannot be felt, cannot be heard, cannot be smelt. it lies behind stars and under hills, and empty holes it fills. it comes first and follows after, ends life, kills laughter.
+    reasmb: Here is a riddle. Alive without breath, as cold as death; never thirsty, ever drinking, all in mail never clinking.
+    reasmb: This thing all things devours - birds, beasts, trees, flowers; gnaws iron, bites steel; grinds hard stones to meal; slays king, ruins town, and beats high mountain down.
+key: thirty
+  decomp: thirty white horses *
+    reasmb: The answer is teeths. Gollum only has three.
+key: eye
+  decomp: an eye in a blue face *
+    reasmb: Sssssss! The answer is the sssun. Gollum hates the sun.
+key: hinges
+  decomp: a box without hinges *
+    reasmb: Eggses! Gollum likes to eat eggsess. 
+key: no-legs
+  decomp: no-legs lay on one-leg *
+    reasmb: The answer is a fish on a table, a man on a stool, and the cat gets the scraps.
+
+#v Aaron
 key: xnone                                                                              #AB
   decomp: *                                                                             #
     reasmb: We doesn't likes it, preciousss.                                            #
@@ -135,6 +153,10 @@ key: hello
   decomp: *
     reasmb: It must state its problem, yes it musst.
     reasmb: We doesn't like you, nasty, fat hobbit.
+
+#^ Aaron
+#v Gerard
+
 key: computer 50
   decomp: *
     reasmb: Do computers worry you ?
@@ -272,82 +294,76 @@ key: yes
     reasmb: You are sure.
     reasmb: I see.
     reasmb: I understand.
+
+#^ Gerard
+#v Ben
+
 key: no
   decomp: *
-    reasmb: Are you saying no just to be negative?
-    reasmb: You are being a bit negative.
-    reasmb: Why not ?
-    reasmb: Why 'no' ?
+    reasmb: Gollum hates it.
+    reasmb: It is not saying yes.
 key: my 2
   decomp: $ * my *
-    reasmb: Lets discuss further why your (2) .
-    reasmb: Earlier you said your (2) .
-    reasmb: But your (2) .
-    reasmb: Does that have anything to do with the fact that your (2) ?
+    reasmb: Gollum wants its (2) .
+    reasmb: It has (2) . Does it also have the precious?
+    reasmb: Is that because  its (2) ?
   decomp: * my * @family *
-    reasmb: Tell me more about your family.
-    reasmb: Who else in your family (4) ?
-    reasmb: Your (3) ?
-    reasmb: What else comes to mind when you think of your (3) ?
+    reasmb: The precious is Gollum's family.
+    reasmb: What other filthy creatures is in its family (4) ?
+    reasmb: Its (3) ?
+    reasmb: Does it think of the precious when it thinks of its (3) ? Gollum always thinks of the precious
   decomp: * my *
-    reasmb: Your (2) ?
-    reasmb: Why do you say your (2) ?
-    reasmb: Does that suggest anything else which belongs to you ?
-    reasmb: Is it important that your (2) ?
+    reasmb: Its (2) ?
+    reasmb: Why does it say its (2) ?
+    reasmb: What else does it own? Gollum wants to take it.
+    reasmb: Is its (2) precious?
 key: can
   decomp: * can you *
-    reasmb: You believe I can (2) don't you ?
+    reasmb: Gollum serves no master but the precious .
+    reasmb: Gollum cannot (2)
     reasmb: goto what
-    reasmb: You want me to be able to (2) .
-    reasmb: Perhaps you would like to be able to (2) yourself.
+    reasmb: It wants Gollum to (2) .
+    reasmb: It should (2) itself .
   decomp: * can i *
-    reasmb: Whether or not you can (2) depends on you more than me.
-    reasmb: Do you want to be able to (2) ?
-    reasmb: Perhaps you don't want to (2) .
+    reasmb. no. It cannot.
+    reasmb: It must decide if it must (2) .
+    reasmb: Does it want to (2) ? It must find the precious. Yes! Find it and give it to Gollum. Then it will be able to (2)
+    reasmb: It does not want to (2) .
     reasmb: goto what
 key: what
   decomp: *
-    reasmb: Why do you ask ?
-    reasmb: Does that question interest you ?
-    reasmb: What is it you really wanted to know ?
-    reasmb: Are such questions much on your mind ?
-    reasmb: What answer would please you most ?
-    reasmb: What do you think ?
-    reasmb: What comes to mind when you ask that ?
-    reasmb: Have you asked such questions before ?
-    reasmb: Have you asked anyone else ?
+    reasmb: Why does it want to know ?
+    reasmb: Is it interested in that question ?
+    reasmb: What does it really want to know ? Does it think Gollum is lying ?
+    reasmb: It must think about that often .
+    reasmb: What does it want Gollum to say ? Gollum will say anything for the precious .
+    reasmb: What is it thinking ?
+    reasmb: Does it often talk about that ?
+    reasmb: Ask someone else. Gollum does not want to help .
 key: because
   decomp: *
-    reasmb: Is that the real reason ?
-    reasmb: Don't any other reasons come to mind ?
-    reasmb: Does that reason seem to explain anything else ?
-    reasmb: What other reasons might there be ?
+    reasmb: It is lying . Gollum does not trust it .
+    reasmb: What other reasons does it have ? What is it hiding ?
 key: why
   decomp: * why don't you *
-    reasmb: Do you believe I don't (2) ?
-    reasmb: Perhaps I will (2) in good time.
-    reasmb: Should you (2) yourself ?
-    reasmb: You want me to (2) ?
+    reasmb: Why doesn't it think Gollum will (2) ?
+    reasmb: Gollum will (2) . With a price.
+    reasmb: It should do (2) itself.
+    reasmb: (2) ?
     reasmb: goto what
   decomp: * why can't i *
-    reasmb: Do you think you should be able to (2) ?
-    reasmb: Do you want to be able to (2) ?
-    reasmb: Do you believe this will help you to (2) ?
-    reasmb: Have you any idea why you can't (2) ?
+    reasmb: It can (2) ?
+    reasmb: Does it want to (2) ?
+    reasmb: Will (2) help it?
+    reasmb: Because it is filthy, weak, and nasty. Like a hobbit.
     reasmb: goto what
   decomp: *
     reasmb: goto what
 key: everyone 2
   decomp: * @everyone *
-    reasmb: Realy, (2) ?
-    reasmb: Surely not (2) .
-    reasmb: Can you think of anyone in particular ?
-    reasmb: Who, for example?
-    reasmb: Are you thinking of a very special person ?
-    reasmb: Who, may I ask ?
-    reasmb: Someone special perhaps ?
-    reasmb: You have a particular person in mind, don't you ?
-    reasmb: Who do you think you're talking about ?
+    reasmb: Yes, yes! (2) .
+    reasmb: Who is it talking about ?
+    reasmb: Is it talking about some ssssspecial ?
 key: everybody 2
   decomp: *
     reasmb: goto everyone
@@ -359,20 +375,14 @@ key: noone 2
     reasmb: goto everyone
 key: always 1
   decomp: *
-    reasmb: Can you think of a specific example ?
-    reasmb: When ?
-    reasmb: What incident are you thinking of ?
-    reasmb: Really, always ?
+    reasmb: Tell Gollum more. Gollum wants an example, ssssssss.
+    reasmb: Gollum wants the precious alwaysssss.
+    reasmb: Yes. Always and always. It will never escape.
 key: alike 10
   decomp: *
-    reasmb: In what way ?
-    reasmb: What resemblence do you see ?
-    reasmb: What does that similarity suggest to you ?
-    reasmb: What other connections do you see ?
-    reasmb: What do you suppose that resemblence means ?
-    reasmb: What is the connection, do you suppose ?
-    reasmb: Could here really be some connection ?
-    reasmb: How ?
+    reasmb: How is it similar ?
+    reasmb: Does it see a resemblance ?
+    reasmb: It is like what ?
 key: like 10
   decomp: * @be * like *
     reasmb: goto alike
