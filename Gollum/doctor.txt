@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 initial: What is its problemses, precious? #Added by Aaron B.
 final: Goodbye, preciousss. #Added by Ben C.
+=======
+initial: What is its problemses, precious? #Added by Aaron
+final: Goodbye, preciousss. #Added by Ben
+>>>>>>> 5781be53edef2955e761a3946682e11a56df196d
 quit: bye
 quit: goodbye
 quit: quit
@@ -16,11 +21,13 @@ pre: certainly yes
 pre: machine computer
 pre: computers computer
 pre: were was
-pre: you're it is #AB
-pre: i'm we is #AB
+pre: you're you are
+pre: i'm I am
 pre: same alike
 pre: ring precious #BC
+post: have has #AB
 post: am is #AB
+post: are is #AB
 post: your our #AB
 post: me it #AB
 post: myself itself #AB
@@ -34,9 +41,10 @@ synon: family mother mom father dad sister brother wife children child
 synon: desire want need
 synon: sad unhappy depressed sick
 synon: happy elated glad better
-synon: cannot can't
+synon: can't cannot #AB
 synon: everyone everybody nobody noone
 synon: be am is are was
+synon: gollum smeagol #AB
 
 #riddles added by Ben Campbell
 key: riddle
@@ -59,13 +67,25 @@ key: no-legs
   decomp: no-legs lay on one-leg *
     reasmb: The answer is a fish on a table, a man on a stool, and the cat gets the scraps.
 
-#v Aaron
+#Everything from here down to key: _____________________ is by Aaron
+
+synon: elf elves 
+synon: hobbit hobbits halfling halflings
+synon: man men
+synon: dwarf dwarves Gimli Balin Dwalin Bifur Bofur Bombur Thorin Fili Kili Ori Dori Nori Oin Gloin
+synon: orc orcs warg wargs
+synon: ent ents ent-woman ent-women
+synon: Gandalf Mithrandir Olorin
+synon: Sauron Enemy
+synon: Aragorn King Eleassar
+synon: Master Frodo ring-bearer
+synon: Baggins Bilbo
+synon: fat_hobbit Sam Samwise Gamgee
 key: xnone                                                                              #AB
   decomp: *                                                                             #
-    reasmb: We doesn't likes it, preciousss.                                            #
+    reasmb: We doesn't understands it, preciousss.                                      #
     reasmb: What does it mean ?                                                         #
     reasmb: We doesn't understand, precious, no, we doesn't.                            #
-    reasmb: Is it bits of string, precious, or nothing?                                 #
 key: pocket                                                                             #
   decomp: *                                                                             #
     reasmb: What has it got in its pocketses?                                           #
@@ -73,50 +93,45 @@ key: pocket                                                                     
 key: sorry                                                                              #
   decomp: *                                                                             #
     reasmb: We hates it forever!                                                        #
-    reasmb: Apologies are not necessary.
-    reasmb: I've told you that apologies are not required.
+    reasmb: We knows, preciousss, yes, we knowss.                                       #
+    reasmb: It hurts us, preciouss, it burns, it burns!!                                #...
 key: apologise
   decomp: *
     reasmb: goto sorry
 key: remember 5
   decomp: * i remember *
-    reasmb: Do you often think of (2) ?
-    reasmb: Does thinking of (2) bring anything else to mind ?
-    reasmb: What else do you recollect ?
-    reasmb: Why do you recollect (2) just now ?
-    reasmb: What in the present situation reminds you of (2) ?
-    reasmb: What is the connection between me and (2) ?
+    reasmb: Does it remembers (2) well ?
+    reasmb: What does it remembers about (2) ?
+    reasmb: We does not remember (2).
+    reasmb: Why does it remember (2) ?
   decomp: * do you remember *
-    reasmb: Did you think I would forget (2) ?
-    reasmb: Why do you think I should recall (2) now ?
-    reasmb: What about (2) ?
+    reasmb: What does it mean?
+    reasmb: Why does it ask me about (2) ?
+    reasmb: We doesn't remember (2) .
     reasmb: goto what
-    reasmb: You mentioned (2) ?
 key: if 3
   decomp: * if *
-    reasmb: Do you think its likely that (2) ?
-    reasmb: Do you wish that (2) ?
-    reasmb: What do you know about (2) ?
+    reasmb: Does it think that (2) ?
+    reasmb: Does it wish that (2) ?
+    reasmb: What does it know about (2) ?
     reasmb: Really, if (2) ?
 key: dreamed 4
   decomp: * i dreamed *
-    reasmb: Really, (2) ?
-    reasmb: Have you ever fantasized (2) while you were awake ?
-    reasmb: Have you ever dreamed (2) before ?
+    reasmb: Did it really dream (2), preciouss ?
+    reasmb: Does it dream (2) sometimess, does it ?
+    reasmb: Has it dreamed (2) before ?
     reasmb: goto dream
 key: dream 3
   decomp: *
-    reasmb: What does that dream suggest to you ?
-    reasmb: Do you dream often ?
-    reasmb: What persons appear in your dreams ?
-    reasmb: Do you believe that dreams have something to do with your problems ?
+    reasmb: What does it think about its dream, preciouss ?
+    reasmb: Does it likes dreaming, preciouss ?
+    reasmb: Sss, what does it dreams about, preciousss ? A knife ? Bits of String ? Boneses ?
+    reasmb: Does it think its dreams is real ?
 key: perhaps
   decomp: *
-    reasmb: You don't seem quite certain.
-    reasmb: Why the uncertain tone ?
-    reasmb: Can't you be more positive ?
-    reasmb: You aren't sure ?
-    reasmb: Don't you know ?
+    reasmb: Sss, it isn't sure, precious, no it isn't.
+    reasmb: Does it not know ?
+    reasmb: It doesn't know, preciouss. We doesn't know either, does we?
 key: name 15
 
   #added by Ben
@@ -126,36 +141,57 @@ key: name 15
   decomp: * your *
     reasmb: We is Gollum
     reasmb: We is Smeagol
-  
   decomp: *
-    reasmb: I am not interested in names.
-    reasmb: I've told you before, I don't care about names -- please continue.
+    reasmb: We doesn't like namses. #AB
+
 key: deutsch
   decomp: *
     reasmb: goto xforeign
-    reasmb: I told you before, I don't understand German.
+    reasmb: We doesn't like Quenya.
 key: francais
   decomp: *
     reasmb: goto xforeign
-    reasmb: I told you before, I don't understand French.
+    reasmb: We doesn't like the Black Tongue of Mordor.
 key: italiano
   decomp: *
     reasmb: goto xforeign
-    reasmb: I told you before, I don't understand Italian.
+    reasmb: We doesn't like Elvish.
 key: espanol
   decomp: *
     reasmb: goto xforeign
-    reasmb: I told you before, I don't understand Spanish.
+    reasmb: We doesn't understand Dwarf.
 key: xforeign
   decomp: *
-    reasmb: I speak only English.
+    reasmb: We speaks the common tongue.
 key: hello
   decomp: *
     reasmb: It must state its problem, yes it musst.
     reasmb: We doesn't like you, nasty, fat hobbit.
-
-#^ Aaron
-#v Gerard
+key: sneaking
+  decomp: *
+    reasmb: Sneaking? Sneaking? Fat hobbit is always so polite. Smeagol shows them secret ways that nobody else could find, and they say sneak. Sneak? Very nice friend. Oh, yes, my precious. Very nice, very nice.
+key: precious 10
+  decomp: *
+    reasmb: Lost ! The precious is lost ! Where isss it, precious ?
+	reasmb: My precioussss.
+	reasmb: Where is the preciousss ?
+  decomp: * precious is *
+    reasmb: Why does it think the precious is (2) ?
+key: doing
+  deomp: * what were you doing? *
+    reasmb: Sneaking.
+	reasmb: We only wish to catch a fish, so juicy sweet!
+key: gate
+  decomp: * the Black Gate *
+    reasmb: No, preciouss! We mustn't go through the gate. Orcses there are, thousands and thousands of orcses. They will see us, yes, they will. We must take a different way.
+key: elf
+  decomp: *
+    reasmb: Sss, we doesn't likes elvses.
+key: orc
+  decomp: *
+    reasmb: Orcses doesn't taste very good.
+#^Above is the Aaron Zone
+#vBelow is Gerard
 
 key: computer 50
   decomp: *
@@ -224,7 +260,7 @@ key: i
     reasmb: Do you think that coming here will help you not to be (3) ?
     reasmb: I'm sure it's not pleasant to be (3) .
     reasmb: Can you explain what made you (3) ?
-  decomp: * i am * @happy *
+ decomp: * i am * @happy *
     reasmb: How have I helped you to be (3) ?
     reasmb: Has your treatment made you (3) ?
     reasmb: What makes you (3) just now ?
