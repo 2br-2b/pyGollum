@@ -9,12 +9,14 @@ from Discord.token_manager import TOKEN as TOKEN
 import Gollum.eliza
 from Gollum.eliza import Eliza as Chatbot
 
+channelID = 671840489540157462
+
 
 cbot = Chatbot()
 cbot.load('Gollum/doctor.txt')
 bot = commands.Bot("g.", help_command = None)
 
-dml = dmlistener(bot, 671840489540157462, cbot)
+dml = dmlistener(bot, channelID, cbot)
 bot.add_cog(dml)
 
 @bot.event
