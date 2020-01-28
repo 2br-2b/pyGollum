@@ -249,11 +249,30 @@ class Eliza:
         print(self.final())
 
 
-def main():
-    eliza = Eliza()
-    eliza.load('doctor.txt')
-    eliza.run()
 
-if __name__ == '__main__':
-    logging.basicConfig()
-    main()
+
+
+
+    def init(self):
+        return self.initial()
+
+    def message(self, msg):
+        return self.respond(msg)
+
+
+
+
+
+
+
+
+
+
+#def main():
+#    eliza = Eliza()
+#    eliza.load('Gollum/doctor.txt')
+#    eliza.run()
+#
+#if __name__ == '__main__':
+#    logging.basicConfig()
+#    main()
