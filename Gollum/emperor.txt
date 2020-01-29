@@ -1,0 +1,391 @@
+initial: Welcome, my young apprentice.
+final: Goodbye, preciousss. #Added by Ben
+quit: bye
+quit: goodbye
+quit: quit
+pre: dont don't
+pre: cant can't
+pre: wont won't
+pre: isnt isn't
+pre: recollect remember
+pre: dreamt dreamed
+pre: dreams dream
+pre: maybe perhaps
+pre: how what
+pre: when what
+pre: certainly yes
+pre: machine computer
+pre: computers computer
+pre: were was
+pre: you're you are
+pre: i'm I am
+pre: same alike
+pre: Anakin Vader
+post: have has
+post: am is
+post: are is
+post: your our #AB
+post: me it #AB
+post: myself itself #AB
+post: yourself ourselves #AB
+post: i it #AB
+post: you us #AB
+post: my its #AB
+post: i'm it is #AB
+post: don't doesn't #AB
+
+synon: belief feel think believe wish
+synon: family mother mom father dad sister brother wife children child
+synon: desire want need
+synon: sad unhappy depressed sick
+synon: happy elated glad better
+synon: everyone everybody nobody noone
+synon: be am is are was
+synon: can't cannot #AB
+synon: Vader Anakin
+synon: Luke
+synon: Leia princess
+
+key: xnone                                                                              
+  decomp: *                                                                             
+    reasmb: Heh heh heh.
+    reasmb: Strike me down in your anger!
+    reasmb: Have you ever heard the tragedy of Darth Plageus the Wise?
+key: jedi 3
+  decomp: * jedi way *                                                                            
+    reasmb: Do it.
+key: right
+  decomp: * isn't right *                                                                            
+    reasmb: Do it.
+key: Plageus 5
+  decomp: * 
+    reasmb: Darth Plagueis was a Dark Lord of the Sith, so powerful and so wise he could use the Force to influence the midichlorians to create life.
+    reasmb: Darth Plagueis had such a knowledge of the dark side that he could even keep the ones he cared about from dying.
+    reasmb: The dark side of the Force is a pathway to many abilities some consider to be unnatural.
+key: if 3
+  decomp: * if *
+    reasmb: Do you really think that (2)?
+    reasmb: Does it wish that (2)?
+    reasmb: What does it know about (2) ?
+    reasmb: Really, if (2) ?
+key: dreamed 4
+  decomp: * i dreamed *
+    reasmb: Did it really dream (2) , preciouss ?
+    reasmb: Does it dream (2) sometimess, does it ?
+    reasmb: Has it dreamed (2) before ?
+    reasmb: goto dream
+key: dream 3
+  decomp: *
+    reasmb: What does it think about its dream, preciouss ?
+    reasmb: Does it likes dreaming, preciouss ?
+    reasmb: Sss, what does it dreams about, preciousss ? A knife ? Bits of String ? Boneses ?
+    reasmb: Does it think its dreams is real ?
+key: perhaps
+  decomp: *
+    reasmb: Sss, it isn't sure, precious, no it isn't.
+    reasmb: Does it not know ?
+    reasmb: It doesn't know, preciouss. We doesn't know either, does we?
+key: name 15
+  decomp: * you *
+    reasmb: I have been every voice you have ever heard inside your head.
+    reasmb: I am a sith lord.
+  decomp: * your *
+    reasmb: I have been every voice you have ever heard inside your head.
+    reasmb: I am a sith lord.
+  decomp: *
+    reasmb: goto xnone
+key: who 15
+  decomp: * you *
+    reasmb: I have been every voice you have ever heard inside your head.
+    reasmb: I am a sith lord.
+  decomp: * your *
+    reasmb: I have been every voice you have ever heard inside your head.
+    reasmb: I am a sith lord.
+  decomp: *
+    reasmb: goto xnone
+
+key: deutsch
+  decomp: *
+    reasmb: goto xforeign
+    reasmb: We doesn't like Quenya.
+key: francais
+  decomp: *
+    reasmb: goto xforeign
+    reasmb: We doesn't like the Black Tongue of Mordor.
+key: italiano
+  decomp: *
+    reasmb: goto xforeign
+    reasmb: We doesn't like Elvish.
+key: espanol
+  decomp: *
+    reasmb: goto xforeign
+    reasmb: We doesn't understand Dwarf.
+key: xforeign
+  decomp: *
+    reasmb: We speaks the common tongue.
+key: hello
+  decomp: *
+    reasmb: It must state its problem, yes it musst.
+    reasmb: We doesn't like you, nasty, fat hobbit.
+key: sneaking 2
+  decomp: *
+    reasmb: Sneaking? Sneaking? Fat hobbit is always so polite. Smeagol shows them secret ways that nobody else could find, and they say sneak. Sneak? Very nice friend. Oh, yes, my precious. Very nice, very nice.
+key: precious 10
+  decomp: *
+    reasmb: Lost ! The precious is lost ! Where isss it, precious ?
+	reasmb: My precioussss.
+	reasmb: Where is the preciousss ?
+  decomp: * precious is *
+    reasmb: Why does it think the precious is (2) ?
+key: doing 5
+  decomp: * what * doing *
+    reasmb: Sneaking.
+    reasmb: We only wish to catch a fish, so juicy sweet!
+key: gate
+  decomp: * the Black Gate *
+    reasmb: No, preciouss! We mustn't go through the gate. Orcses there are, thousands and thousands of orcses. They will see us, yes, they will. We must take a different way.
+key: @elf
+  decomp: *
+    reasmb: Sss, we doesn't likes elvses.
+key: @orc
+  decomp: *
+    reasmb: Orcses doesn't taste very good.
+#^Aaron
+#\/ Gerard
+key: computer 50
+  decomp: *
+    reasmb: Sss, sss, my precious. What is computersss ?
+    reasmb: Computersss? What does it mean, computersss, my precious ?
+    reasmb: Why does it thinks computerss are a problem for it ?
+    reasmb: Sss, sss, my precious. Does it not thinkss computers can help uss ?
+    reasmb: Sss, sss, my precious. Why does it not like computers ?
+    reasmb: Machiness, machiness! What does precious think about machiness ?
+key: birthday
+  decomp: *birthday present*
+    reasmb: My birthday-present! That's what we wants now, yes, we wants it!
+    reasmb: My birthday-present! It came to me on my birthday, my precious.
+key: baggins
+  decomp: *baggins*
+    reasmb: Thief! Thief! Thief! Baggins! We hates it, we hates it, we hates it forever!
+key: am
+  decomp: * am i *
+    reasmb: Does it believe it is (2) ?
+    reasmb: Would it want to be, would itss want to be (2) ?
+    reasmb: Does it wish precious would tell itsss it isss (2) ?
+    reasmb: What does it mean if itsss is (2) ?
+    reasmb: goto what
+  decomp: *
+    reasmb: Sss, sss, my preciousss. Why does it say 'am' ?
+    reasmb: Sss, sss, we don't understand, we don't understand.
+key: are
+  decomp: * are you *
+    reasmb: Sss, sss, why is it interested in whether we are (2) or not, preciousss ?
+    reasmb: Would you prefer if I weren't (2) ?
+    reasmb: Perhaps I am (2) in your fantasies.
+    reasmb: Do you sometimes think I am (2) ?
+    reasmb: goto what
+  decomp: * are *
+    reasmb: Sss, sss, does it thinksss it might not be (2) ?
+    reasmb: Sss, sss, does it like it if it was not (2) ?
+    reasmb: What if it was not, precious, gollum, gollum (2) ?
+    reasmb: Yes, precious, possibly it is (2) .
+key: your
+  decomp: * your *
+    reasmb: Sss, why does it concern itself over our (2) ?
+    reasmb: Is (2) in itss nasty pocketsesss ?
+    reasmb: Sss, sss, why does it think of our (2) ?
+    reasmb: Sss, sss, my (2) ?
+key: was 2
+  decomp: * was i *
+    reasmb: What if it was (2) ?
+    reasmb: Sss, sss, what does it think it wasss (2) ?
+    reasmb: Sss, was it (2) ?
+    reasmb: Precious, what would it mean if it was (2) ?
+    reasmb: Tell us, tell us precious, what does (2) mean ?
+    reasmb: goto what
+  decomp: * i was *
+    reasmb: S-s-s-s-s, precious, it was (2) ?
+    reasmb: Sss, sss, it says it was (2) , my precious!
+    reasmb: Sss, we already know it is (2) .
+  decomp: * was you *
+    reasmb: Sss, sss, it says we were (2) ?
+    reasmb: Why, precious, does it thinks we were (2) ?
+    reasmb:  ?
+    reasmb: (2) ? What iss you, precious ?
+    reasmb: Sss, what is (2) ?
+key: i
+  decomp: * i @desire *
+    reasmb: Sss, sss, I wants my precious! Why does it want (3) ?
+    reasmb: Sss, sss, it wants (3) ?
+    reasmb: What if it got (3) soon, gollum, gollum !
+    reasmb: Sss, sss, it will never get our (3) !
+    reasmb: Sss, why does it wants (3) ?
+    reasmb: Sss, sss, precious, why is it saying (3) ?
+  decomp: * i am * @sad *
+    reasmb: S-s-s-s-s, we are sad, gollum, gollum! Nasty Bagginsss stole our precious!
+    reasmb: Does it thinks it is (3) ?
+    reasmb: Sss, sss, we hates being (3) .
+    reasmb: Sss, why is it (3) ?
+  decomp: * i am * @happy *
+    reasmb: S-s-s-s-s, we would be (3) with our preciousss, yes !
+    reasmb: Sss, sss, have we made it (3) ?
+    reasmb: Sss, why is it (3) now ?
+    reasmb: Suspiciousss, suspiciousss! Why is it (3) ?
+  decomp: * i was *
+    reasmb: goto was
+  decomp: * i @belief * i *
+    reasmb: Sss, but does it think so, precious ?
+    reasmb: Yes, yes, we thinks it doesn't know if itsss (3) .
+    reasmb: Sss, does it doubt itsss (3) ?
+  decomp: * i * @belief * you *
+    reasmb: goto you
+  decomp: * i am *
+    reasmb: Sss, does it come to precious for (2) ?
+    reasmb: Sss, how long has it been (2) , precious ?
+    reasmb: Is it normal to be (2) , precious ?
+    reasmb: Does it like being (2) ?
+  decomp: * i @can't *
+    reasmb: Sss, why can it not (3) ?
+    reasmb: We asksss, has it tried ?
+    reasmb: Perhaps it could (3) now.
+    reasmb: Does it really want to (3), precious ?
+  decomp: * i don't *
+    reasmb: Why can it not (2) , precious ?
+    reasmb: Sss, why does it not (2) ?
+    reasmb: Does it wish to want to (2) ?
+    reasmb: Does that trouble it, precious ?
+  decomp: * do i feel *
+    reasmb: Sss, we want to hear its feelingsss, yes precious.
+    reasmb: Sss, does it often feel (2) ?
+    reasmb: We enjoy precious, yes. Does it enjoy (2) ?
+    reasmb: What does (2) remind it of, we thinksss ?
+  decomp: * i * you *
+    reasmb: Sss, maybe it has (2) for precious, gollum, gollum.
+    reasmb: Sss, sss, does it want to (2) us ?
+    reasmb: S-s-s-s-s, it wantsss to (2) us, precious.
+    reasmb: Sss, does it (2) any other ?
+  decomp: *
+    reasmb: It saysss (1) ?
+    reasmb: What does it mean ?
+    reasmb: Does it say (1) for some reason, precious ?
+    reasmb: Sss, interesssting.
+key: you
+  decomp: * you remind me of *
+    reasmb: goto alike
+  decomp: * you are *
+    reasmb: Sss, why does it think we are (2) ?
+    reasmb: Sss, why does it think of (2) , precious ?
+    reasmb: Does it wantsss us to be (2) ?
+    reasmb: It wants (2) , we thinksss !
+  decomp: * you * me *
+    reasmb: Sss, why does it thinksss we (2) it ?
+    reasmb: It likesss to think we (2) it -- doesn't it ?
+    reasmb: Sss, what makes it think we (2) it ?
+    reasmb: S-s-s-s-s, we (2) it ?
+    reasmb: Do you wish to believe I (2) you ?
+    reasmb: Yes, yes, gollum, what if we did (2) it -- what does it mean ?
+    reasmb: Sss, does Bagginss believe we (2) it ?
+  decomp: * you *
+    reasmb: Sss, precious, we are talking about it, not us!
+    reasmb: Sss, we (2) ?
+    reasmb: It is talking about us, we thinks !
+    reasmb: Sss, what is its feelings ?
+#^Gerard
+#\/Ben
+key: yes #This one key added by Aaron because it appears we forgot it
+  decomp: *
+    reasmb: It seems quite certain, yess it does.
+    reasmb: What does it say yess about, preciouss?
+    reasmb: It is sure, preciousss.
+    reasmb: It agrees, preciouss.
+#^ Gerard
+#v Ben
+
+key: no
+  decomp: *
+    reasmb: Gollum hates it.
+    reasmb: It is not saying yes.
+key: my 2
+  decomp: $ * my *
+    reasmb: Gollum wants its (2) .
+    reasmb: It has (2) . Does it also have the precious?
+    reasmb: Is that because  its (2) ?
+  decomp: * my * @family *
+    reasmb: The precious is Gollum's family.
+    reasmb: What other filthy creatures is in its family (4) ?
+    reasmb: Its (3) ?
+    reasmb: Does it think of the precious when it thinks of its (3) ? Gollum always thinks of the precious
+  decomp: * my *
+    reasmb: Its (2) ?
+    reasmb: Why does it say its (2) ?
+    reasmb: What else does it own? Gollum wants to take it.
+    reasmb: Is its (2) precious?
+key: can
+  decomp: * can you *
+    reasmb: Gollum serves no master but the precious .
+    reasmb: Gollum cannot (2)
+    reasmb: goto what
+    reasmb: It wants Gollum to (2) .
+    reasmb: It should (2) itself .
+  decomp: * can i *
+    reasmb. no. It cannot.
+    reasmb: It must decide if it must (2) .
+    reasmb: Does it want to (2) ? It must find the precious. Yes! Find it and give it to Gollum. Then it will be able to (2)
+    reasmb: It does not want to (2) .
+    reasmb: goto what
+key: what
+  decomp: *
+    reasmb: Why does it want to know ?
+    reasmb: Is it interested in that question ?
+    reasmb: What does it really want to know ? Does it think Gollum is lying ?
+    reasmb: It must think about that often .
+    reasmb: What does it want Gollum to say ? Gollum will say anything for the precious .
+    reasmb: What is it thinking ?
+    reasmb: Does it often talk about that ?
+    reasmb: Ask someone else. Gollum does not want to help .
+key: because
+  decomp: *
+    reasmb: It is lying . Gollum does not trust it .
+    reasmb: What other reasons does it have ? What is it hiding ?
+key: why
+  decomp: * why don't you *
+    reasmb: Why doesn't it think Gollum will (2) ?
+    reasmb: Gollum will (2) . With a price.
+    reasmb: It should do (2) itself.
+    reasmb: (2) ?
+    reasmb: goto what
+  decomp: * why can't i *
+    reasmb: It can (2) ?
+    reasmb: Does it want to (2) ?
+    reasmb: Will (2) help it?
+    reasmb: Because it is filthy, weak, and nasty. Like a hobbit.
+    reasmb: goto what
+  decomp: *
+    reasmb: goto what
+key: everyone 2
+  decomp: * @everyone *
+    reasmb: Yes, yes! (2) .
+    reasmb: Who is it talking about ?
+    reasmb: Is it talking about some ssssspecial ?
+key: everybody 2
+  decomp: *
+    reasmb: goto everyone
+key: nobody 2
+  decomp: *
+    reasmb: goto everyone
+key: noone 2
+  decomp: *
+    reasmb: goto everyone
+key: always 1
+  decomp: *
+    reasmb: Tell Gollum more. Gollum wants an example, ssssssss.
+    reasmb: Gollum wants the precious alwaysssss.
+    reasmb: Yes. Always and always. It will never escape.
+key: alike 10
+  decomp: *
+    reasmb: How is it similar ?
+    reasmb: Does it see a resemblance ?
+    reasmb: It is like what ?
+key: like 10
+  decomp: * @be * like *
+    reasmb: goto alike
