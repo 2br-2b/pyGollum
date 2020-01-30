@@ -22,6 +22,6 @@ bot.add_cog(dml)
 @bot.event
 async def on_ready():
     print("Started!")
-    await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name=" for stories"))
+    await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name=" for hobbitses"))
 
 bot.run(TOKEN)
