@@ -15,6 +15,7 @@ class dmlistener(commands.Cog):
         if message.author.bot:
             return    
             
+        #get the response and send it
         await message.channel.send(self.chatbot.message(message.content))
 
     @commands.command()
