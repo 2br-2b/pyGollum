@@ -1,3 +1,5 @@
+#makes 2 copies of the bot and has them talk with each other
+
 import Gollum.eliza
 from Gollum.eliza import Eliza as Chatbot
 import time
